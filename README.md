@@ -38,11 +38,11 @@ The "test" and "train" datasets contain 2947 and 7352 rows respectively.
 ##Data Analysis
 The analysis performed by the run_analysis.R script is straightforward: 
 
-1. Load all the input files, including the references files such as the subject
-listing, the activity labels, and the variable names (features.txt).
+1. Load all the input files listed above, including the references files such as
+the subject listing, the activity labels, and the variable names (features.txt).
 
-2. Select only the columns of the X.txt that contain the words "mean()"
-and "std()" and bind them with the subject_*.txt, and y_*.txt files. The first
+2. Select only the columns of the X_"*".txt that contain the words "mean()"
+and "std()" and bind them with the subject_"*".txt, and y_"*".txt files. The first
 column is the subject identifier, second column is the actitity identifyer, and
 the remaining columns (66) contain only the "mean()" and "std()" measurements.
 
@@ -62,8 +62,8 @@ clarify that the tidy dataset contains averaged values.
 ##Output
 
 The output of the run_analysis.R script is a tidy table containing 180 rows and
-68 columns, broken down into 30 different subjects who performed six activities
-each. All the columns are appropriately named and described in the Codebook.md
-file attached with this submission.
+68 columns, i.e. 30 different subjects who each performed six activities. All
+the columns are appropriately named and described in the Codebook.md file
+attached with this submission. 
 
 
