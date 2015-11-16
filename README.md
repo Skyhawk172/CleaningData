@@ -61,5 +61,9 @@ clarify that the tidy dataset contains averaged values.
 
 ##Output
 
+The output of the run_analysis.R script is a tidy table containing 180 rows and
+68 columns, broken down into 30 different subjects who performed six activities
+each. All the columns are appropriately named and described in the Codebook.md
+file attached with this submission.
 
 
