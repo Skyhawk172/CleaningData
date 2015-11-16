@@ -14,12 +14,13 @@ along three axes along with some derived quantities
 The run_analysis.R script loads different files in order to build a tidy
 dataset. The files are the following, where "*" stands for either the "test" or "train" datasets:
 
-* activity_labels.txt (1 column): contains the integer identifier of the activity
-  performed. The activities are (1) Walking, (2) Walking upstairs, (3) Walking
-  Downstairs, (4) Sitting, (5) Standing, and (6) Laying.
+* activity_labels.txt (2 columns): contains the integer identifier of the activity
+  performed and the activity name. The activity names are (1) Walking, (2)
+  Walking upstairs, (3) Walking Downstairs, (4) Sitting, (5) Standing, and (6) Laying.
 
-* features.txt (1 column): contains all the variable names in the original datasets. More
-  information is available in the Codebook.md file attached with this submission.
+* features.txt (2 columns): contains integer identifier with all the variable
+  names in the original datasets. More information is available in the
+  Codebook.md file attached with this submission. 
 
 * subject_*.txt (1 column): contains a list of integers identifying the subject that
   performed the activities.
@@ -35,12 +36,27 @@ The "test" and "train" datasets contain 2947 and 7352 rows respectively.
 
 
 ##Data Analysis
-The analysis performed by the run_analysis.R script is straightforward. 
+The analysis performed by the run_analysis.R script is straightforward: 
 
 1. Load all the input files, including the references files such as the subject
 listing, the activity labels, and the variable names (features.txt).
 
-2. 
+2. Select only the columns of the X.txt that contain the words "mean()"
+and "std()" and bind them with the subject_*.txt, and y_*.txt files. The first
+column is the subject identifier, second column is the actitity identifyer, and
+the remaining columns (66) contain only the "mean()" and "std()" measurements.
+
+3. Replace the second column's activity identifies by the appropriate name of
+the activity based on the "activity_labels.txt" file.
+
+4. Aggregate all the measurement for each subject and activity and take the
+average of each column.  This is now the tidy dataset.
+
+5. Format the descriptive variable names for clarity. In particular, remove the
+"()" from the variable names. Also add the label "Avg" to each variable to
+clarify that the tidy dataset contains averaged values.
+
+6. Write the tidy dataset to an output file using the write.table() command.
 
 
 ##Output
