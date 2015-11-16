@@ -28,7 +28,9 @@ dataset. The files are the following, where "*" stands for either the "test" or 
 
 * X_*.txt: contains the actual measured/calculated quantities as defined in the
   features.txt file. More information in the Codebook.md file attached with this
-  submission. 
+  submission. For both datasets, there are 561 rows in this file.
+
+The "test" and "train" datasets contain 2947 and 7352 rows respectively.
 
 
 
