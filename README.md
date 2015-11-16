@@ -41,7 +41,7 @@ The analysis performed by the run_analysis.R script is straightforward:
 1. Load all the input files listed above, including the references files such as
 the subject listing, the activity labels, and the variable names (features.txt).
 
-2. Select only the columns of the X_*.txt that contain the words "mean()"
+2. Select only the columns of the "X_*.txt" that contain the words "mean()"
 and "std()" and bind them with the subject_*.txt, and y_*.txt files. The first
 column is the subject identifier, second column is the actitity identifyer, and
 the remaining columns (66) contain only the "mean()" and "std()" measurements.
