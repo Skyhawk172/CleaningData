@@ -7,5 +7,17 @@ y_*.txt, and X_*.txt, where * stands for "train" or "test") and binds the
 columns into a single dataset.
 
 
+##Data format and description
+
+
+
+
+##Data Analysis
+
+
+
+
+##Output
+
 
 
