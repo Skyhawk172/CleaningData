@@ -42,8 +42,12 @@ by calculating variables from the time and frequency domain. See
 
 ##Code Book
 
-This section is partly based on the original dataset README file, with only
-small changes to the actual naming convention:
+#### Summary Choices
+
+For the purpose of clarity, we selected only the variables containing the
+strings "mean()" and "std()" from the original dataset. Moreover, the values
+reported in the tidy dataset are average values for each subject and activity,
+as noted in the final variable name listing (see below).
 
 
 #### Naming Convention
@@ -71,13 +75,6 @@ frequency domain signals).
 These signals were used to estimate variables of the feature vector for each
 pattern: 'XYZ' is used to denote 3-axial signals in the X, Y and Z directions
 respectively.
-
-
-#### Summary Choices
-
-For the purpose of clarity, we down selected only the "mean()" and "std()"
-variables from  the original dataset. Moreover, the values reported in the tidy
-dataset are average values for each subject and activity.
 
 
 #### Variable Units
