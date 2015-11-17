@@ -1,12 +1,23 @@
 # Codebook run_analysis.R
 
-## Code book:
-* info about the variables/units
-* info about summary choices that were made
-* info about experimental study design used, i.e. context
-
 
 ## Context & Study Design 
+==================================================================
+Human Activity Recognition Using Smartphones Dataset
+Version 1.0
+==================================================================
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Universit‡ degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+==================================================================
+
+The following is mostly based on the original dataset README file listed
+above. For the purpose of our project, the dataset was parsed and the varible
+naming convention modified for sake of clarity. Both our tidier dataset and the
+naming convention are described below.
 
 The experiments have been carried out with a group of 30 volunteers within an
 age bracket of 19-48 years. Each person performed six activities (WALKING,
@@ -36,7 +47,7 @@ This section is partly based on the original dataset README file, with only
 small changes to the actual naming convention:
 
 
-### Naming Convention
+#### Naming Convention
 
 The features selected for this database come from the accelerometer and
 gyroscope 3-axial raw signals AccXYZ-T and GyroXYZ-T. These time domain signals
@@ -63,21 +74,21 @@ pattern: 'XYZ' is used to denote 3-axial signals in the X, Y and Z directions
 respectively.
 
 
-### Summary Choices
+#### Summary Choices
 
 For the purpose of clarity, we down selected only the "mean()" and "std()"
 variables from  the original dataset. Moreover, the values reported in the tidy
 dataset are average values for each subject and activity.
 
 
-### Variable Units
+#### Variable Units
 
 The acceleration signal from the smartphone accelerometer XYZ axis are reported
 in standard gravity units 'g'. The angular velocity vector measured by the
 gyroscope for each window sample are reported in units of radians/second. 
 
 
-### Variable Listing
+#### Variable Listing
 
 * Subject                   
 * Activity                  
