@@ -86,6 +86,10 @@ gyroscope for each window sample are reported in units of radians/second.
 
 #### Variable Listing
 
+Based on the above naming convention, the variables are then self-descriptive
+and easy to interpret just by looking at their name. Here is the full listing of
+all the variables (i.e. columns) found in our tidy dataset:
+
 * Subject                   
 * Activity                  
 * Avg-BodyAccX_Tmean        
