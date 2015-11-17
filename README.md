@@ -43,7 +43,7 @@ the subfolder "UCI HAR Dataset", whereas the other files should be located
 in their respective "test" or "train" folder.
 
 Note that the "test" and "train" datasets contain 2947 and 7352 rows
-respectively.
+respectively.  Moreover, there are 30 different subjects in the experiment.
 
 
 
@@ -53,9 +53,10 @@ The analysis performed by the run_analysis.R script is
 straightforward.  All the user needs to type in RStudio, given the necessary
 input files are found, is the command:
 
- "source("run_analysis.R")". 
+** "source("run_analysis.R")". **
 
-The script will ingest both datasets ("test" and "train") in the same execution.
+The script will ingest both datasets ("test" and "train") in the same execution
+and produce a combined tidy dataset.
 
 In particular, the run_analysis.R script performs the following tasks:
 
@@ -85,8 +86,10 @@ default output name is "run_analysis_output.txt".
 ##Output
 
 The output of the run_analysis.R script is a tidy table containing 180 rows and
-68 columns, i.e. 30 different subjects who each performed six activities. All
-the columns are appropriately named and described in the Codebook.md file
-attached with this submission. 
+68 columns (i.e. 30 different subjects who each performed six activities). 
+
+The columns are appropriately named, as described in the Codebook.md file
+attached with this submission, and each row represents one (averaged)
+observation of one subject performing one activity.
 
 
