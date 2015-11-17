@@ -50,12 +50,16 @@ either the mean or the standard deviation of a set of measurements done for one
 subject performing one activity.
 
 Moreover, given that the subjects may have performed the same activity more than
-once, we report in our tidy dataset the ==average== value of all these
+once, we report in our tidy dataset the _average_ value of all these
 measurement for each subject and activity.  This is represented by the "Avg" tag
 in the variable names (see below).
 
 
 #### Naming Convention
+
+(Note that the convention here is slightly different from the original
+dataset. The authors argue that our naming convention is clearer and easy to
+understand.)
 
 The features selected for this database come from the accelerometer and
 gyroscope 3-axial raw signals AccXYZ-T and GyroXYZ-T. These time domain signals
