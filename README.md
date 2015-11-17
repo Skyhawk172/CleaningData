@@ -8,7 +8,7 @@ three different files, and binds them together into a single, tidy dataset.
 The datasets are taken from the "Human Activity Recognition Using Smartphones
 Dataset Version 1.0" experiment. The data consists of accelerometers and
 gyroscopic measurements along three axes along with some derived
-quantities. More information in the attached Codebook.md file.
+quantities. More information is available in the attached Codebook.md file.
 
 
 ##Input Files Description
@@ -33,9 +33,10 @@ The necesary files to be read are the following, where "*" stands for either the
 
 * y_*.txt (1 column): contains a list of integers identifying what activity was performed..
 
-* X_*.txt (561 columns): contains the actual measured/calculated quantities as listed in the
-  features.txt file. This file, for both datasets, has 561 rows. More
-  information in the Codebook.md file attached with this submission. 
+* X_*.txt (561 columns): contains the actual measured/calculated quantities as
+  listed in the features.txt file. This file has 561 rows (for both
+  datasets). More information is available in the Codebook.md file attached with
+  this submission.
 
 The first two files (activity_labels.txt and features.txt) should be located in
 the subfolder "UCI HAR Dataset", whereas the other files should be located
@@ -46,13 +47,12 @@ respectively.
 
 
 
-##Data Analysis
-The analysis performed by the run_analysis.R script is straightforward and will
-ingest both datasets ("test" and "train") in the same execution.  All the user
-needs to type in RStudio, given the necessary input files are found, is the
-command "source("run_analysis.R")".
+##Data Analysis The analysis performed by the run_analysis.R script is
+straightforward.  All the user needs to type in RStudio, given the necessary
+input files are found, is the command "source("run_analysis.R")". The script
+will ingest both datasets ("test" and "train") in the same execution.
 
-The run_analysis.R script performs the following tasks:
+In particular, the run_analysis.R script performs the following tasks:
 
 1. Load all the input files listed above, including the references files such as
 the subject listing, the activity labels, and the variable names (features.txt).
