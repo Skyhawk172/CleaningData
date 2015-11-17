@@ -51,8 +51,11 @@ respectively.
 
 The analysis performed by the run_analysis.R script is
 straightforward.  All the user needs to type in RStudio, given the necessary
-input files are found, is the command "source("run_analysis.R")". The script
-will ingest both datasets ("test" and "train") in the same execution.
+input files are found, is the command:
+
+ "source("run_analysis.R")". 
+
+The script will ingest both datasets ("test" and "train") in the same execution.
 
 In particular, the run_analysis.R script performs the following tasks:
 
