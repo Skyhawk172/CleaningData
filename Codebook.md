@@ -45,9 +45,14 @@ by calculating variables from the time and frequency domain. See
 #### Summary Choices
 
 For the purpose of clarity, we selected only the variables containing the
-strings "mean()" and "std()" from the original dataset. Moreover, the values
-reported in the tidy dataset are average values for each subject and activity,
-as noted in the final variable name listing (see below).
+strings "mean()" and "std()" from the original dataset. These values represent
+either the mean or the standard deviation of a set of measurements done for one
+subject performing one activity.
+
+Moreover, given that the subjects may have performed the same activity more than
+once, we report in our tidy dataset the ==average== value of all these
+measurement for each subject and activity.  This is represented by the "Avg" tag
+in the variable names (see below).
 
 
 #### Naming Convention
