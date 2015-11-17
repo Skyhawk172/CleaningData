@@ -30,10 +30,13 @@ by calculating variables from the time and frequency domain. See
 
 
 
-##Variable naming and listing
+##Code Book
 
 This section is partly based on the original dataset README file, with only
 small changes to the actual naming convention:
+
+
+### Naming Convention
 
 The features selected for this database come from the accelerometer and
 gyroscope 3-axial raw signals AccXYZ-T and GyroXYZ-T. These time domain signals
@@ -59,9 +62,22 @@ These signals were used to estimate variables of the feature vector for each
 pattern: 'XYZ' is used to denote 3-axial signals in the X, Y and Z directions
 respectively.
 
+
+### Summary Choices
+
+For the purpose of clarity, we down selected only the "mean()" and "std()"
+variables from  the original dataset. Moreover, the values reported in the tidy
+dataset are average values for each subject and activity.
+
+
+### Variable Units
+
 The acceleration signal from the smartphone accelerometer XYZ axis are reported
 in standard gravity units 'g'. The angular velocity vector measured by the
 gyroscope for each window sample are reported in units of radians/second. 
+
+
+### Variable Listing
 
 * Subject                   
 * Activity                  
