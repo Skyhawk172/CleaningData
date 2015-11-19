@@ -90,10 +90,11 @@ for( iset in set ){
 
 
 #############################################################################
-# Rename first and second columns of tidy dataset:
+# Rename all columns since we're about to take the average:
 #############################################################################
 colnames(tidydata)[1] <- "Subject"
 colnames(tidydata)[2] <- "Activity"
+colnames(tidydata)[-1:-2] <- paste("Avg-",names(tidydata)[-1:-2], sep="")
 
 
 #############################################################################
@@ -101,12 +102,6 @@ colnames(tidydata)[2] <- "Activity"
 #############################################################################
 aggregated <- aggregate(tidydata[-1:-2],by=list(Subject=tidydata$Subject,Activity=tidydata$Activity), mean)
 aggregated <- aggregated[ order(aggregated$Subject), ]
-
-
-#############################################################################
-# Rename columns of aggregated data to reflect averages:
-#############################################################################
-colnames(aggregated)[-1:-2] <- paste("Avg-",names(aggregated)[-1:-2], sep="")
 
 
 #############################################################################
