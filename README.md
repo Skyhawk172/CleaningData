@@ -85,8 +85,8 @@ default output name is "run_analysis_output.txt".
 
 ##Output
 
-The output of the run_analysis.R script is a tidy table containing 180 rows and
-68 columns (i.e. 30 different subjects who each performed six activities). 
+The output of the run_analysis.R script is a tidy table containing 68 columns
+and 180 rows (i.e. 30 different subjects who each performed six activities). 
 
 The columns are appropriately named, as described in the Codebook.md file
 attached with this submission, and each row represents one (averaged)

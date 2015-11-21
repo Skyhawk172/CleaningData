@@ -58,8 +58,7 @@ in the variable names (see below).
 #### Naming Convention
 
 (Note that the convention here is slightly different from the original
-dataset. The authors argue that our naming convention is clearer and easy to
-understand.)
+dataset. We argue that our naming convention is clearer and easy to understand.)
 
 The features selected for this database come from the accelerometer and
 gyroscope 3-axial raw signals AccXYZ-T and GyroXYZ-T. These time domain signals
