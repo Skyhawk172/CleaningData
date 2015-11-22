@@ -32,7 +32,6 @@ allnames <- gsub("BodyBody","Body",allnames)
 
 # re-format variable names: 
 # "Body/Gravity" + "Acc/Gyro/Jerk/Mag" + "XYZ" + "_" + "time/freq" + "mean/std"
-a=strsplit(allnames,"-")
 for(i in 1:length(allnames)){
   temp <- unlist(strsplit(allnames[[i]],"-"))
   
